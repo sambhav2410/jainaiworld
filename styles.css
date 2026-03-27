@@ -1557,6 +1557,180 @@ button {
   }
 }
 
+@media (max-width: 1100px) {
+  .festival-banner {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 1.4rem;
+  }
+
+  .festival-copy {
+    max-width: 720px;
+    text-align: center;
+  }
+
+  .festival-countdown {
+    justify-content: center;
+  }
+
+  .festival-visual {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-content {
+    padding-top: calc(var(--header-height) + 1.5rem);
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-copy-col {
+    max-width: min(100%, 680px);
+    padding-inline: 0.25rem;
+  }
+
+  .eyebrow {
+    letter-spacing: 0.22em;
+  }
+
+  .hero-title {
+    font-size: clamp(2.9rem, 12vw, 4.8rem);
+    line-height: 0.96;
+  }
+
+  .hero-copy {
+    max-width: min(100%, 640px);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    gap: 0.85rem;
+  }
+
+  .button,
+  .festival-link {
+    min-width: 0;
+  }
+
+  .blessing-strip {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 22px;
+  }
+
+  .blessing-track span {
+    padding: 0.85rem 1.1rem;
+    font-size: 0.76rem;
+    letter-spacing: 0.14em;
+  }
+
+  .festival-banner {
+    gap: 1rem;
+    padding: 1.2rem;
+  }
+
+  .festival-copy h2 {
+    font-size: clamp(1.7rem, 6vw, 2.3rem);
+    line-height: 1.05;
+  }
+
+  .festival-copy p {
+    font-size: 0.92rem;
+  }
+
+  .countdown-pill {
+    min-width: 86px;
+    flex: 1 1 86px;
+    max-width: 110px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-content {
+    padding-top: calc(var(--header-height) + 1.1rem);
+    padding-bottom: 3rem;
+  }
+
+  .hero-copy-col {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: clamp(2.35rem, 13vw, 3.8rem);
+  }
+
+  .hero-copy {
+    font-size: 0.98rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button,
+  .festival-link,
+  .audio-button {
+    width: min(100%, 320px);
+  }
+
+  .blessing-strip {
+    border-radius: 18px;
+  }
+
+  .blessing-track span {
+    padding: 0.78rem 1rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+  }
+
+  .festival-banner {
+    padding: 1rem;
+    border-radius: 22px;
+  }
+
+  .festival-copy {
+    text-align: center;
+  }
+
+  .festival-countdown {
+    gap: 0.65rem;
+  }
+
+  .countdown-pill {
+    min-width: 78px;
+    padding: 0.8rem 0.65rem;
+  }
+
+  .countdown-pill strong {
+    font-size: 1.45rem;
+  }
+
+  .festival-visual {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-title {
+    font-size: clamp(2.1rem, 14vw, 3.2rem);
+  }
+
+  .festival-visual {
+    display: none;
+  }
+
+  .festival-countdown {
+    width: 100%;
+  }
+
+  .countdown-pill {
+    max-width: none;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1569,6 +1743,7 @@ button {
     transition: none !important;
   }
 }
+
 
 
 
