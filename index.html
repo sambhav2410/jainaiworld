@@ -6,7 +6,7 @@
     <title>JainAIWorld — Explore the Path of Non-Violence</title>
     <meta
       name="description"
-      content="Discover ancient Jain wisdom — Ahimsa, Namokar Mantra, holy Tirth places, and sacred scriptures."
+      content="Discover ancient Jain wisdom — Ahimsa, Namokar Mantra, holy Tirth places, sacred scriptures, and a special Mahavir Jayanti celebration."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,6 +54,11 @@
           <img src="assets/hero-mandala.jpg" alt="Sacred mandala art" />
           <div class="hero-overlay"></div>
         </div>
+        <div class="hero-noise"></div>
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+        <div class="hero-orb orb-three"></div>
+        <div class="hero-grid"></div>
 
         <div class="container hero-content">
           <p class="eyebrow reveal">Explore the Path of Non-Violence</p>
@@ -66,9 +71,44 @@
           </p>
 
           <div class="hero-actions reveal">
-            <a class="button primary" href="#namokar">Namokar Mantra</a>
-            <a class="button secondary" href="#tirth">Explore Tirth</a>
+            <a class="button primary magnetic" href="#namokar">Namokar Mantra</a>
+            <a class="button secondary magnetic" href="#tirth">Explore Tirth</a>
           </div>
+
+          <section
+            class="festival-banner reveal tilt-card"
+            id="jayantiBanner"
+            aria-label="Mahavir Jayanti announcement"
+          >
+            <div class="festival-copy">
+              <span class="festival-tag">Mahavir Jayanti 2026</span>
+              <h2>Celebrating the path of Ahimsa on Tuesday, March 31, 2026</h2>
+              <p>
+                A luminous countdown to the birth anniversary of Bhagwan Mahavir,
+                designed to bring a festive, modern, devotional energy to JainAIWorld.
+              </p>
+            </div>
+
+            <div class="festival-countdown" id="jayantiCountdown" data-target="2026-03-31T00:00:00+05:30">
+              <div class="countdown-pill">
+                <strong id="countDays">00</strong>
+                <span>Days</span>
+              </div>
+              <div class="countdown-pill">
+                <strong id="countHours">00</strong>
+                <span>Hours</span>
+              </div>
+              <div class="countdown-pill">
+                <strong id="countMinutes">00</strong>
+                <span>Minutes</span>
+              </div>
+            </div>
+
+            <div class="festival-visual" aria-hidden="true">
+              <div class="festival-glow"></div>
+              <img src="assets/reel-mahavir.png" alt="" />
+            </div>
+          </section>
         </div>
 
         <a class="scroll-indicator" href="#namokar" aria-label="Scroll to next section">
@@ -81,6 +121,7 @@
           <img src="assets/parallax-temple.jpg" alt="Jain temple interior" />
           <div class="parallax-overlay"></div>
         </div>
+        <div class="mantra-stars"></div>
 
         <div class="container mantra-content">
           <p class="eyebrow reveal">The Most Sacred Prayer</p>
@@ -88,24 +129,40 @@
             Namokar <span class="gold-text">Mantra</span>
           </h2>
 
+          <div class="mantra-audio reveal tilt-card" id="mantraPlayer">
+            <div class="mantra-audio-copy">
+              <span class="mantra-audio-tag">Listen</span>
+              <h3>Namokar Mantra Audio</h3>
+              <p>
+                Tap play to listen instantly. This uses your browser voice for a smooth
+                built-in chant experience.
+              </p>
+            </div>
+            <div class="mantra-audio-actions">
+              <button class="audio-button audio-play" id="playMantra" type="button">Play Mantra</button>
+              <button class="audio-button audio-stop" id="stopMantra" type="button">Stop</button>
+            </div>
+            <p class="audio-status" id="audioStatus">Ready to play</p>
+          </div>
+
           <div class="mantra-lines">
-            <article class="mantra-line reveal">
+            <article class="mantra-line reveal tilt-card">
               <h3>णमो अरिहंताणं</h3>
               <p>I bow to the Arihantas (Conquerors)</p>
             </article>
-            <article class="mantra-line reveal">
+            <article class="mantra-line reveal tilt-card">
               <h3>णमो सिद्धाणं</h3>
               <p>I bow to the Siddhas (Liberated Souls)</p>
             </article>
-            <article class="mantra-line reveal">
+            <article class="mantra-line reveal tilt-card">
               <h3>णमो आयरियाणं</h3>
               <p>I bow to the Acharyas (Preceptors)</p>
             </article>
-            <article class="mantra-line reveal">
+            <article class="mantra-line reveal tilt-card">
               <h3>णमो उवज्झायाणं</h3>
               <p>I bow to the Upadhyayas (Teachers)</p>
             </article>
-            <article class="mantra-line reveal">
+            <article class="mantra-line reveal tilt-card">
               <h3>णमो लोए सव्व साहूणं</h3>
               <p>I bow to all the Sadhus (Saints)</p>
             </article>
@@ -124,81 +181,37 @@
             <p class="eyebrow accent">Watch &amp; Learn</p>
             <h2 class="section-title">Featured <span class="gold-text">Reels</span></h2>
             <p class="section-subtitle">
-              Short spiritual insights from the timeless wisdom of Jainism
+              Direct Instagram reels from JainAIWorld without extra card text.
             </p>
           </div>
 
-          <div class="reels-grid" id="reelsGrid">
-            <a
-              class="reel-card reveal"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-instagram-url="https://www.instagram.com/reel/DWLx3Qdk-WO/?igsh=MTc0aHd1cXozbDhsag=="
-            >
-              <img src="assets/reel-mahavir.png" alt="Veer Mahavir reel thumbnail" />
-              <div class="card-fade"></div>
-              <div class="play-badge" aria-hidden="true"></div>
-              <div class="reel-copy">
-                <h3>Veer Mahavir</h3>
-                <p>Divine meditation artwork inspired by Veer Mahavir for the featured reel.</p>
-                <span>Sample reel</span>
-              </div>
-            </a>
+          <div class="reels-grid reel-embed-grid">
+            <article class="reel-embed-card reveal tilt-card">
+              <iframe
+                src="https://www.instagram.com/reel/DWT5q7hE0ya/embed"
+                title="Instagram reel 1"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            </article>
 
-            <a
-              class="reel-card reveal"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-instagram-url="https://www.instagram.com/reel/DWLx3Qdk-WO/?igsh=MTc0aHd1cXozbDhsag=="
-            >
-              <img src="assets/tirth-dilwara.jpg" alt="Meditation reel cover" />
-              <div class="card-fade"></div>
-              <div class="play-badge" aria-hidden="true"></div>
-              <div class="reel-copy">
-                <h3>Jain Meditation Techniques</h3>
-                <p>Ancient practices of Preksha Dhyana for inner peace</p>
-                <span>Sample reel</span>
-              </div>
-            </a>
+            <article class="reel-embed-card reveal tilt-card">
+              <iframe
+                src="https://www.instagram.com/reel/DWV_3O1E1eJ/embed"
+                title="Instagram reel 2"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            </article>
 
-            <a
-              class="reel-card reveal"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-instagram-url="https://www.instagram.com/reel/DWLx3Qdk-WO/?igsh=MTc0aHd1cXozbDhsag=="
-            >
-              <img src="assets/tirth-palitana.jpg" alt="Festival reel cover" />
-              <div class="card-fade"></div>
-              <div class="play-badge" aria-hidden="true"></div>
-              <div class="reel-copy">
-                <h3>Paryushana Parva</h3>
-                <p>The most important Jain festival of spiritual upliftment</p>
-                <span>Sample reel</span>
-              </div>
-            </a>
-
-            <a
-              class="reel-card reveal"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-instagram-url="https://www.instagram.com/reel/DWLx3Qdk-WO/?igsh=MTc0aHd1cXozbDhsag=="
-            >
-              <img
-                src="assets/tirth-shravanabelagola.jpg"
-                alt="Five vows reel cover"
-              />
-              <div class="card-fade"></div>
-              <div class="play-badge" aria-hidden="true"></div>
-              <div class="reel-copy">
-                <h3>Five Great Vows</h3>
-                <p>Pancha Mahavrata — the five pillars of Jain conduct</p>
-                <span>Sample reel</span>
-              </div>
-            </a>
+            <article class="reel-embed-card reveal tilt-card">
+              <iframe
+                src="https://www.instagram.com/reel/DWOZcaSkxZm/embed"
+                title="Instagram reel 3"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            </article>
           </div>
         </div>
       </section>
@@ -214,7 +227,12 @@
           </div>
 
           <div class="places-grid">
-            <article class="place-card reveal">
+            <a
+              class="place-card reveal tilt-card"
+              href="https://en.wikipedia.org/wiki/Ranakpur_Jain_Temple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div class="place-media">
                 <img src="assets/tirth-ranakpur.jpg" alt="Ranakpur Temple" />
                 <span class="place-location">Rajasthan, India</span>
@@ -227,9 +245,14 @@
                 </p>
                 <span class="link-text">Learn more</span>
               </div>
-            </article>
+            </a>
 
-            <article class="place-card reveal">
+            <a
+              class="place-card reveal tilt-card"
+              href="https://en.wikipedia.org/wiki/Palitana_temples"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div class="place-media">
                 <img src="assets/tirth-palitana.jpg" alt="Palitana Temples" />
                 <span class="place-location">Gujarat, India</span>
@@ -242,9 +265,14 @@
                 </p>
                 <span class="link-text">Learn more</span>
               </div>
-            </article>
+            </a>
 
-            <article class="place-card reveal">
+            <a
+              class="place-card reveal tilt-card"
+              href="https://en.wikipedia.org/wiki/Dilwara_Temples"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div class="place-media">
                 <img src="assets/tirth-dilwara.jpg" alt="Dilwara Temples" />
                 <span class="place-location">Mount Abu, Rajasthan</span>
@@ -257,14 +285,16 @@
                 </p>
                 <span class="link-text">Learn more</span>
               </div>
-            </article>
+            </a>
 
-            <article class="place-card reveal">
+            <a
+              class="place-card reveal tilt-card"
+              href="https://en.wikipedia.org/wiki/Shravanabelagola"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div class="place-media">
-                <img
-                  src="assets/tirth-shravanabelagola.jpg"
-                  alt="Shravanabelagola"
-                />
+                <img src="assets/tirth-shravanabelagola.jpg" alt="Shravanabelagola" />
                 <span class="place-location">Karnataka, India</span>
               </div>
               <div class="place-copy">
@@ -275,7 +305,7 @@
                 </p>
                 <span class="link-text">Learn more</span>
               </div>
-            </article>
+            </a>
           </div>
         </div>
       </section>
@@ -291,27 +321,15 @@
           </div>
 
           <div class="books-grid">
-            <a
-              class="book-card reveal"
-              href="https://en.wikipedia.org/wiki/Tattvartha_Sutra"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="book-card reveal tilt-card" href="https://en.wikipedia.org/wiki/Tattvartha_Sutra" target="_blank" rel="noopener noreferrer">
               <div class="book-icon">ॐ</div>
               <h3>Tattvartha Sutra</h3>
               <p class="book-author">Acharya Umaswami</p>
-              <p>
-                The foundational text of Jain philosophy covering all aspects of reality.
-              </p>
+              <p>The foundational text of Jain philosophy covering all aspects of reality.</p>
               <span class="link-text">Read more</span>
             </a>
 
-            <a
-              class="book-card reveal"
-              href="https://en.wikipedia.org/wiki/Kalpa_S%C5%ABtra"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="book-card reveal tilt-card" href="https://en.wikipedia.org/wiki/Kalpa_S%C5%ABtra" target="_blank" rel="noopener noreferrer">
               <div class="book-icon">ॐ</div>
               <h3>Kalpa Sutra</h3>
               <p class="book-author">Acharya Bhadrabahu</p>
@@ -319,63 +337,35 @@
               <span class="link-text">Read more</span>
             </a>
 
-            <a
-              class="book-card reveal"
-              href="https://en.wikipedia.org/wiki/Samayasara"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="book-card reveal tilt-card" href="https://en.wikipedia.org/wiki/Samayasara" target="_blank" rel="noopener noreferrer">
               <div class="book-icon">ॐ</div>
               <h3>Samayasara</h3>
               <p class="book-author">Acharya Kundakunda</p>
-              <p>
-                A masterpiece on the nature of the soul and spiritual liberation.
-              </p>
+              <p>A masterpiece on the nature of the soul and spiritual liberation.</p>
               <span class="link-text">Read more</span>
             </a>
 
-            <a
-              class="book-card reveal"
-              href="https://en.wikipedia.org/wiki/Uttaradhyayana_Sutra"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="book-card reveal tilt-card" href="https://en.wikipedia.org/wiki/Uttaradhyayana_Sutra" target="_blank" rel="noopener noreferrer">
               <div class="book-icon">ॐ</div>
               <h3>Uttaradhyayana Sutra</h3>
               <p class="book-author">Jain Agama</p>
-              <p>
-                Last teachings of Lord Mahavira on ethics, philosophy, and conduct.
-              </p>
+              <p>Last teachings of Lord Mahavira on ethics, philosophy, and conduct.</p>
               <span class="link-text">Read more</span>
             </a>
 
-            <a
-              class="book-card reveal"
-              href="https://en.wikipedia.org/wiki/Dravyasamgraha"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="book-card reveal tilt-card" href="https://en.wikipedia.org/wiki/Dravyasamgraha" target="_blank" rel="noopener noreferrer">
               <div class="book-icon">ॐ</div>
               <h3>Dravyasamgraha</h3>
               <p class="book-author">Acharya Nemichandra</p>
-              <p>
-                A concise treatise on the six universal substances in Jain metaphysics.
-              </p>
+              <p>A concise treatise on the six universal substances in Jain metaphysics.</p>
               <span class="link-text">Read more</span>
             </a>
 
-            <a
-              class="book-card reveal"
-              href="https://en.wikipedia.org/wiki/Niyamasara"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a class="book-card reveal tilt-card" href="https://en.wikipedia.org/wiki/Niyamasara" target="_blank" rel="noopener noreferrer">
               <div class="book-icon">ॐ</div>
               <h3>Niyamasara</h3>
               <p class="book-author">Acharya Kundakunda</p>
-              <p>
-                Explores the rules of conduct for achieving spiritual purity.
-              </p>
+              <p>Explores the rules of conduct for achieving spiritual purity.</p>
               <span class="link-text">Read more</span>
             </a>
           </div>
@@ -389,13 +379,16 @@
           <img src="assets/logo.png" alt="JainAIWorld logo" width="32" height="32" />
           <span>JainAIWorld</span>
         </div>
+
         <p>Dedicated to spreading the timeless wisdom of Jainism — Ahimsa Paramo Dharma</p>
-        <p>© <span id="currentYear"></span> JainAIWorld</p>
+
+        <div class="footer-links">
+          <a href="https://www.instagram.com/jainaiworld?igsh=MXZ0dGZlb2p3Ym1ocQ==" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <p>© <span id="currentYear"></span> JainAIWorld</p>
+        </div>
       </div>
     </footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-

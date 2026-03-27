@@ -1,7 +1,7 @@
 ﻿:root {
   --background: hsl(40 33% 97%);
   --foreground: hsl(20 20% 12%);
-  --card: hsla(40 30% 95% / 0.72);
+  --card: hsla(40 30% 95% / 0.74);
   --muted: hsl(35 20% 90%);
   --muted-foreground: hsl(20 10% 45%);
   --border: hsl(35 25% 85%);
@@ -33,7 +33,8 @@ body {
   overflow-x: hidden;
 }
 
-img {
+img,
+iframe {
   display: block;
   max-width: 100%;
 }
@@ -61,7 +62,7 @@ button {
 }
 
 .site-header.is-scrolled {
-  background: hsla(40 33% 97% / 0.8);
+  background: hsla(40 33% 97% / 0.82);
   backdrop-filter: blur(18px);
   border-color: hsla(35 25% 85% / 0.85);
   box-shadow: 0 12px 40px -24px hsla(20 20% 12% / 0.28);
@@ -186,12 +187,77 @@ button {
   object-fit: cover;
 }
 
+.hero-media img {
+  animation: slowZoom 18s ease-in-out infinite alternate;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 50% 35%, hsla(38 89% 59% / 0.14), transparent 28%),
-    linear-gradient(180deg, hsla(20 20% 12% / 0.32), hsla(20 20% 12% / 0.72));
+    radial-gradient(circle at 50% 30%, hsla(38 89% 59% / 0.14), transparent 28%),
+    linear-gradient(180deg, hsla(20 20% 12% / 0.28), hsla(20 20% 12% / 0.76));
+}
+
+.hero-noise,
+.hero-grid,
+.mantra-stars {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-noise {
+  opacity: 0.08;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 80% 25%, rgba(255,215,110,0.8) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 35% 70%, rgba(255,255,255,0.65) 0 1px, transparent 1.5px),
+    radial-gradient(circle at 70% 75%, rgba(255,215,110,0.65) 0 1px, transparent 1.5px);
+  background-size: 180px 180px;
+}
+
+.hero-grid {
+  opacity: 0.18;
+  background-image:
+    linear-gradient(hsla(40 70% 75% / 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, hsla(40 70% 75% / 0.08) 1px, transparent 1px);
+  background-size: 90px 90px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 78%);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+  opacity: 0.45;
+}
+
+.orb-one {
+  width: 220px;
+  height: 220px;
+  top: 16%;
+  left: 8%;
+  background: radial-gradient(circle, hsla(36 80% 50% / 0.5), transparent 70%);
+  animation: floatOrb 9s ease-in-out infinite;
+}
+
+.orb-two {
+  width: 280px;
+  height: 280px;
+  right: 10%;
+  top: 24%;
+  background: radial-gradient(circle, hsla(25 90% 55% / 0.42), transparent 70%);
+  animation: floatOrb 12s ease-in-out infinite reverse;
+}
+
+.orb-three {
+  width: 180px;
+  height: 180px;
+  left: 42%;
+  bottom: 12%;
+  background: radial-gradient(circle, hsla(40 70% 75% / 0.35), transparent 72%);
+  animation: floatOrb 10s ease-in-out infinite;
 }
 
 .hero-content {
@@ -226,6 +292,7 @@ button {
 .hero-title {
   color: var(--cream);
   font-size: clamp(3.8rem, 10vw, 7rem);
+  text-shadow: 0 12px 38px hsla(20 20% 12% / 0.3);
 }
 
 .gold-text {
@@ -261,6 +328,23 @@ button {
   border: 1px solid transparent;
   font-weight: 700;
   transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  inset: -40% auto auto -120%;
+  width: 80%;
+  height: 180%;
+  transform: rotate(18deg);
+  background: linear-gradient(90deg, transparent, hsla(40 33% 97% / 0.28), transparent);
+  transition: transform 520ms ease;
+}
+
+.button:hover::after {
+  transform: translateX(250%) rotate(18deg);
 }
 
 .button:hover {
@@ -277,6 +361,144 @@ button {
   border-color: hsla(40 70% 75% / 0.9);
   color: var(--gold-light);
   background: hsla(40 33% 97% / 0.03);
+}
+
+.festival-banner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.45fr 0.9fr 0.7fr;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 2.3rem auto 0;
+  padding: 1.3rem 1.5rem;
+  border: 1px solid hsla(40 70% 75% / 0.5);
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, hsla(350 60% 25% / 0.72), hsla(20 20% 12% / 0.78)),
+    hsla(40 33% 97% / 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 70px -35px hsla(20 20% 12% / 0.8);
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.festival-banner::before,
+.festival-banner::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.festival-banner::before {
+  inset: -20% auto auto -10%;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, hsla(36 80% 50% / 0.18), transparent 68%);
+}
+
+.festival-banner::after {
+  inset: auto -12% -26% auto;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, hsla(25 90% 55% / 0.16), transparent 72%);
+}
+
+.festival-copy,
+.festival-countdown,
+.festival-visual {
+  position: relative;
+  z-index: 1;
+}
+
+.festival-tag {
+  display: inline-block;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: hsla(40 70% 75% / 0.14);
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.festival-copy h2 {
+  margin: 0.8rem 0 0.55rem;
+  color: var(--cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1;
+}
+
+.festival-copy p {
+  margin: 0;
+  color: var(--gold-light);
+  line-height: 1.7;
+  font-size: 0.96rem;
+}
+
+.festival-countdown {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.countdown-pill {
+  min-width: 92px;
+  padding: 0.95rem 0.8rem;
+  border-radius: 18px;
+  background: hsla(40 33% 97% / 0.1);
+  border: 1px solid hsla(40 70% 75% / 0.15);
+  animation: pulseCard 3.2s ease-in-out infinite;
+}
+
+.countdown-pill:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.countdown-pill:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.countdown-pill strong {
+  display: block;
+  color: var(--cream);
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.countdown-pill span {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--gold-light);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.festival-visual {
+  justify-self: end;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+.festival-glow {
+  position: absolute;
+  inset: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, hsla(36 80% 50% / 0.45), transparent 72%);
+  filter: blur(14px);
+}
+
+.festival-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid hsla(40 70% 75% / 0.25);
+  box-shadow: 0 18px 40px -24px hsla(36 80% 50% / 0.6);
 }
 
 .scroll-indicator {
@@ -302,19 +524,6 @@ button {
   animation: scrollPulse 2s infinite;
 }
 
-@keyframes scrollPulse {
-  0%,
-  100% {
-    opacity: 0.35;
-    transform: translateY(0);
-  }
-
-  50% {
-    opacity: 1;
-    transform: translateY(8px);
-  }
-}
-
 .mantra-section {
   position: relative;
   overflow: hidden;
@@ -330,8 +539,19 @@ button {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, hsla(350 60% 25% / 0.88), hsla(20 20% 12% / 0.88)),
-    radial-gradient(circle at top, hsla(36 80% 50% / 0.1), transparent 30%);
+    linear-gradient(180deg, hsla(350 60% 25% / 0.88), hsla(20 20% 12% / 0.9)),
+    radial-gradient(circle at top, hsla(36 80% 50% / 0.14), transparent 30%);
+}
+
+.mantra-stars {
+  opacity: 0.18;
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255,240,194,0.8) 0 1.5px, transparent 2px),
+    radial-gradient(circle at 86% 24%, rgba(255,214,108,0.8) 0 1.5px, transparent 2px),
+    radial-gradient(circle at 26% 74%, rgba(255,240,194,0.7) 0 1.5px, transparent 2px),
+    radial-gradient(circle at 72% 76%, rgba(255,214,108,0.7) 0 1.5px, transparent 2px);
+  background-size: 220px 220px;
+  animation: twinkle 16s linear infinite;
 }
 
 .mantra-content {
@@ -350,15 +570,93 @@ button {
   color: var(--cream);
 }
 
+.mantra-audio {
+  width: min(100%, 820px);
+  margin: 2.5rem auto 0;
+  padding: 1.25rem 1.35rem;
+  display: grid;
+  grid-template-columns: 1.4fr auto;
+  gap: 1rem;
+  align-items: center;
+  background: hsla(40 33% 97% / 0.08);
+  border: 1px solid hsla(40 70% 75% / 0.18);
+  border-radius: 24px;
+  backdrop-filter: blur(14px);
+}
+
+.mantra-audio-tag {
+  display: inline-block;
+  margin-bottom: 0.55rem;
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.mantra-audio-copy h3 {
+  margin: 0;
+  color: var(--cream);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+}
+
+.mantra-audio-copy p {
+  margin: 0.35rem 0 0;
+  color: var(--gold-light);
+  line-height: 1.7;
+}
+
+.mantra-audio-actions {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.audio-button {
+  min-width: 138px;
+  padding: 0.9rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+.audio-button:hover {
+  transform: translateY(-2px);
+}
+
+.audio-play {
+  background: linear-gradient(135deg, var(--gold), var(--saffron));
+  color: var(--cream);
+  box-shadow: 0 16px 32px -20px hsla(25 90% 55% / 0.8);
+}
+
+.audio-stop {
+  background: hsla(40 33% 97% / 0.12);
+  color: var(--gold-light);
+  border: 1px solid hsla(40 70% 75% / 0.16);
+}
+
+.audio-status {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--cream-dark);
+  font-size: 0.9rem;
+}
+
 .mantra-lines {
   width: min(100%, 760px);
   margin: 3rem auto 0;
   display: grid;
-  gap: 1.75rem;
+  gap: 1.15rem;
 }
 
 .mantra-line {
-  padding: 1.15rem 1rem;
+  padding: 1.25rem 1.2rem;
+  background: hsla(40 33% 97% / 0.06);
+  border: 1px solid hsla(40 70% 75% / 0.12);
+  border-radius: 22px;
 }
 
 .mantra-line h3 {
@@ -411,13 +709,13 @@ button {
   line-height: 1.8;
 }
 
-.reels-grid {
+.reel-embed-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
-.reel-card,
+.reel-embed-card,
 .place-card,
 .book-card {
   position: relative;
@@ -428,97 +726,29 @@ button {
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow);
   transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
-.reel-card:hover,
+.reel-embed-card:hover,
 .place-card:hover,
-.book-card:hover {
-  transform: translateY(-6px);
+.book-card:hover,
+.mantra-audio:hover,
+.mantra-line:hover {
   border-color: hsla(36 80% 50% / 0.35);
   box-shadow: 0 28px 65px -30px hsla(36 80% 50% / 0.35);
 }
 
-.reel-card {
-  aspect-ratio: 9 / 16;
+.reel-embed-card {
+  padding: 0.8rem;
 }
 
-.reel-card img {
+.reel-embed-card iframe {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 500ms ease;
-}
-
-.reel-card:hover img {
-  transform: scale(1.08);
-}
-
-.card-fade {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, hsla(20 20% 12% / 0.06), hsla(20 20% 12% / 0.85));
-}
-
-.play-badge {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 999px;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(135deg, var(--gold), var(--saffron));
-  box-shadow: 0 16px 30px -16px hsla(25 90% 55% / 0.9);
-  opacity: 0;
-  transition: opacity 220ms ease, transform 220ms ease;
-}
-
-.play-badge::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-35%, -50%);
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  border-left: 16px solid var(--cream);
-}
-
-.reel-card:hover .play-badge {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1.03);
-}
-
-.reel-copy {
-  position: absolute;
-  inset: auto 0 0;
-  padding: 1.2rem;
-  color: var(--cream);
-}
-
-.reel-copy h3,
-.place-copy h3,
-.book-card h3 {
-  margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.35rem;
-  font-weight: 700;
-}
-
-.reel-copy p {
-  margin: 0.4rem 0 0;
-  color: var(--cream-dark);
-  font-size: 0.85rem;
-  line-height: 1.55;
-}
-
-.reel-copy span {
-  display: inline-block;
-  margin-top: 0.7rem;
-  color: var(--gold);
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  min-height: 560px;
+  border: 0;
+  border-radius: 18px;
+  background: #fff;
 }
 
 .places-grid {
@@ -530,7 +760,7 @@ button {
 .place-media {
   position: relative;
   overflow: hidden;
-  height: 260px;
+  height: 280px;
 }
 
 .place-media img {
@@ -563,6 +793,14 @@ button {
 .place-copy,
 .book-card {
   padding: 1.5rem;
+}
+
+.place-copy h3,
+.book-card h3 {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
 }
 
 .place-copy p,
@@ -623,24 +861,101 @@ button {
   font-size: 0.92rem;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--gold-dark);
+  font-weight: 700;
+}
+
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 700ms ease, transform 700ms ease;
+  transform: translateY(30px) scale(0.98);
+  transition: opacity 800ms cubic-bezier(0.16, 1, 0.3, 1), transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
 
-@media (max-width: 960px) {
-  .reels-grid,
-  .books-grid {
+.tilt-card {
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1.02); }
+  to { transform: scale(1.1); }
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -18px, 0); }
+}
+
+@keyframes pulseCard {
+  0%, 100% { transform: translateY(0); box-shadow: inset 0 0 0 0 hsla(40 70% 75% / 0); }
+  50% { transform: translateY(-3px); box-shadow: inset 0 0 0 1px hsla(40 70% 75% / 0.18); }
+}
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes twinkle {
+  0% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -8px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes scrollPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(8px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .festival-banner,
+  .mantra-audio {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .festival-countdown,
+  .mantra-audio-actions {
+    justify-content: flex-start;
+  }
+
+  .festival-visual {
+    justify-self: start;
+  }
+
+  .reel-embed-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .places-grid {
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .places-grid,
+  .reel-embed-grid,
+  .books-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -698,19 +1013,41 @@ button {
     width: min(100%, 280px);
   }
 
+  .festival-banner,
+  .mantra-audio {
+    padding: 1rem;
+    border-radius: 24px;
+  }
+
+  .festival-copy h2 {
+    font-size: 1.9rem;
+  }
+
+  .countdown-pill {
+    min-width: 84px;
+  }
+
+  .festival-visual {
+    width: 120px;
+    height: 120px;
+  }
+
+  .audio-button {
+    width: min(100%, 220px);
+  }
+
   .content-section,
   .mantra-content {
     padding: 5rem 0;
   }
 
-  .reels-grid,
-  .books-grid {
-    grid-template-columns: 1fr;
-  }
-
   .footer-shell {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
   }
 }
 
