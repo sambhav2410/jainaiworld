@@ -1,0 +1,30 @@
+﻿<svg width="720" height="220" viewBox="0 0 720 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="templeGlow" x1="28" y1="16" x2="190" y2="184" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6C562"/>
+      <stop offset="1" stop-color="#C85B19"/>
+    </linearGradient>
+    <linearGradient id="templeText" x1="230" y1="70" x2="560" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D2821F"/>
+      <stop offset="1" stop-color="#76300B"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="220" rx="34" fill="#FFF7EC"/>
+  <g transform="translate(28 28)">
+    <circle cx="82" cy="82" r="70" fill="#FFF2DC" stroke="#F0D6A7" stroke-width="2"/>
+    <circle cx="82" cy="82" r="58" stroke="url(#templeGlow)" stroke-width="3" stroke-dasharray="2 10"/>
+    <circle cx="82" cy="82" r="4" fill="#EAA024"/>
+    <circle cx="43" cy="58" r="4" fill="#F2B53F"/>
+    <circle cx="121" cy="58" r="4" fill="#F2B53F"/>
+    <circle cx="58" cy="121" r="4" fill="#F2B53F"/>
+    <circle cx="106" cy="121" r="4" fill="#F2B53F"/>
+    <path d="M46 112H118" stroke="#7C3B18" stroke-width="7" stroke-linecap="round"/>
+    <path d="M57 112V84M82 112V68M107 112V84" stroke="#7C3B18" stroke-width="7" stroke-linecap="round"/>
+    <path d="M52 84H112L82 48L52 84Z" fill="url(#templeGlow)"/>
+    <path d="M76 48H88L82 34L76 48Z" fill="#7C3B18"/>
+    <path d="M50 122H114" stroke="#D58B2A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="220" y="95" fill="url(#templeText)" font-size="50" font-weight="700" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="220" y="132" fill="#7D5A42" font-size="17" letter-spacing="4" font-family="Arial, sans-serif">TEMPLE AURA MARK</text>
+  <text x="220" y="162" fill="#8E6A50" font-size="18" font-family="Arial, sans-serif">A classic temple silhouette with subtle AI constellation dots.</text>
+</svg>

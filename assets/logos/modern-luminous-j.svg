@@ -1,0 +1,36 @@
+﻿<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(700 440) rotate(90) scale(520 860)">
+      <stop stop-color="#22160F"/>
+      <stop offset="1" stop-color="#0D0A10"/>
+    </radialGradient>
+    <linearGradient id="goldStroke" x1="300" y1="120" x2="560" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0A8"/>
+      <stop offset="0.45" stop-color="#FFD45F"/>
+      <stop offset="1" stop-color="#C97A14"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="200" y1="610" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE8A0"/>
+      <stop offset="0.55" stop-color="#F0B53F"/>
+      <stop offset="1" stop-color="#C17718"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1400" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.95 0 1 0 0 0.62 0 0 1 0 0.10 0 0 0 1 0" result="warmGlow"/>
+      <feBlend in="SourceGraphic" in2="warmGlow" mode="screen"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" rx="40" fill="url(#bg)"/>
+  <g filter="url(#glow)">
+    <circle cx="504" cy="150" r="12" fill="#FFF4C2"/>
+    <circle cx="338" cy="464" r="10" fill="#FFE58C"/>
+    <circle cx="406" cy="646" r="8" fill="#FFD15E"/>
+    <path d="M466 164C390 226 350 330 364 430C374 497 354 555 280 562" stroke="#F0A11A" stroke-width="10" stroke-linecap="round" opacity="0.28"/>
+    <path d="M486 178C434 216 412 316 416 410C420 492 402 544 332 572" stroke="#F9BC2F" stroke-width="6" stroke-linecap="round" opacity="0.32"/>
+    <path d="M506 150C502 228 486 318 470 440C456 550 398 624 310 618C238 614 206 548 248 492C280 448 340 446 372 448" stroke="url(#goldStroke)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M498 154C494 230 478 320 462 438C448 538 398 600 322 596C266 594 240 546 274 504C298 474 342 470 370 470" stroke="#FFF4C2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"/>
+    <path d="M280 560C336 542 382 544 428 582" stroke="#B77018" stroke-width="5" stroke-linecap="round" opacity="0.35"/>
+  </g>
+  <text x="150" y="785" fill="url(#goldText)" font-size="116" font-style="italic" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="155" y="838" fill="#C5882A" font-size="28" letter-spacing="10" font-family="Arial, sans-serif">LUMINOUS J</text>
+</svg>

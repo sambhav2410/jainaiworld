@@ -1,0 +1,32 @@
+﻿<svg width="720" height="220" viewBox="0 0 720 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ahOrange" x1="24" y1="18" x2="182" y2="184" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD36B"/>
+      <stop offset="1" stop-color="#E05F24"/>
+    </linearGradient>
+    <linearGradient id="ahBlue" x1="20" y1="20" x2="164" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42C7FF"/>
+      <stop offset="1" stop-color="#1750B8"/>
+    </linearGradient>
+    <linearGradient id="ahText" x1="220" y1="64" x2="550" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E08F22"/>
+      <stop offset="1" stop-color="#234DA7"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="220" rx="34" fill="#F6F3ED"/>
+  <g transform="translate(22 20)">
+    <circle cx="88" cy="80" r="64" fill="#F0FAFF" stroke="url(#ahBlue)" stroke-width="4"/>
+    <circle cx="88" cy="80" r="50" stroke="url(#ahOrange)" stroke-width="3" stroke-dasharray="3 11"/>
+    <path d="M56 118C56 84 68 56 88 34C108 56 120 84 120 118" stroke="url(#ahOrange)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M72 116V66H104" stroke="#1E63BE" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M104 66L120 82" stroke="#1E63BE" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="88" cy="28" r="10" fill="#FFD36B"/>
+    <circle cx="38" cy="78" r="7" fill="#35B9F3"/>
+    <circle cx="138" cy="78" r="7" fill="#35B9F3"/>
+    <path d="M88 28V12" stroke="#E27C25" stroke-width="4" stroke-linecap="round"/>
+    <path d="M38 78H22M138 78H154" stroke="#1E63BE" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="220" y="92" fill="url(#ahText)" font-size="50" font-weight="700" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="220" y="130" fill="#5E6D86" font-size="17" letter-spacing="4" font-family="Arial, sans-serif">AURA MONOGRAM</text>
+  <text x="220" y="162" fill="#6E665C" font-size="18" font-family="Arial, sans-serif">A youthful JA-style aura mark that feels brighter and more social-first.</text>
+</svg>

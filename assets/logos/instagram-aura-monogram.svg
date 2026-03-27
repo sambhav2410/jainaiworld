@@ -1,0 +1,33 @@
+﻿<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(540 280) rotate(90) scale(780)">
+      <stop stop-color="#FFF7DE"/>
+      <stop offset="1" stop-color="#FFB65E"/>
+    </radialGradient>
+    <linearGradient id="orange" x1="300" y1="210" x2="760" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD96F"/>
+      <stop offset="1" stop-color="#E05F24"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="300" y1="210" x2="760" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#40C6FF"/>
+      <stop offset="1" stop-color="#184DB7"/>
+    </linearGradient>
+    <linearGradient id="text" x1="230" y1="790" x2="850" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E08720"/>
+      <stop offset="1" stop-color="#1E4AA6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" rx="140" fill="url(#bg)"/>
+  <circle cx="540" cy="430" r="240" fill="#F1FAFF" stroke="url(#blue)" stroke-width="16"/>
+  <circle cx="540" cy="430" r="190" stroke="url(#orange)" stroke-width="12" stroke-dasharray="6 22"/>
+  <path d="M430 580C430 456 474 352 540 274C606 352 650 456 650 580" stroke="url(#orange)" stroke-width="34" stroke-linecap="round"/>
+  <path d="M486 574V388H594" stroke="#1E63BE" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M594 388L666 458" stroke="#1E63BE" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="540" cy="240" r="24" fill="#FFD36B"/>
+  <circle cx="354" cy="424" r="16" fill="#35B9F3"/>
+  <circle cx="726" cy="424" r="16" fill="#35B9F3"/>
+  <path d="M540 214V170" stroke="#E17B24" stroke-width="8" stroke-linecap="round"/>
+  <path d="M354 424H308M726 424H772" stroke="#1E63BE" stroke-width="8" stroke-linecap="round"/>
+  <text x="540" y="846" text-anchor="middle" fill="url(#text)" font-size="110" font-weight="700" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="540" y="916" text-anchor="middle" fill="#315D9D" font-size="38" letter-spacing="7" font-family="Arial, sans-serif">AURA MONOGRAM</text>
+</svg>

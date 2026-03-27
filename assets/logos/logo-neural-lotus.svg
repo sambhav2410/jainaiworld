@@ -1,0 +1,34 @@
+﻿<svg width="720" height="220" viewBox="0 0 720 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nlBlue" x1="16" y1="14" x2="180" y2="172" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38C4FF"/>
+      <stop offset="1" stop-color="#1268C7"/>
+    </linearGradient>
+    <linearGradient id="nlGold" x1="26" y1="28" x2="164" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD56C"/>
+      <stop offset="1" stop-color="#D76D1E"/>
+    </linearGradient>
+    <linearGradient id="nlText" x1="220" y1="64" x2="550" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E69D26"/>
+      <stop offset="1" stop-color="#18539B"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="220" rx="34" fill="#F5F3EE"/>
+  <g transform="translate(24 20)">
+    <circle cx="88" cy="68" r="46" fill="#EFFAFF" stroke="url(#nlBlue)" stroke-width="4"/>
+    <circle cx="88" cy="68" r="8" fill="url(#nlGold)"/>
+    <path d="M88 20L96 40L88 52L80 40L88 20Z" fill="url(#nlGold)"/>
+    <circle cx="48" cy="42" r="5" fill="#22AAE7"/>
+    <circle cx="128" cy="42" r="5" fill="#22AAE7"/>
+    <circle cx="44" cy="88" r="5" fill="#22AAE7"/>
+    <circle cx="132" cy="88" r="5" fill="#22AAE7"/>
+    <path d="M52 42L66 50M124 42L110 50M48 86L66 78M128 86L110 78" stroke="#1D75BA" stroke-width="3" stroke-linecap="round"/>
+    <path d="M30 126C48 100 66 100 84 126C66 140 48 144 30 126Z" fill="url(#nlGold)"/>
+    <path d="M60 132C74 94 102 94 116 132C98 148 78 148 60 132Z" fill="#FFE3A3"/>
+    <path d="M92 126C110 100 128 100 146 126C128 144 110 140 92 126Z" fill="url(#nlGold)"/>
+    <path d="M46 146H130" stroke="#D17B20" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="220" y="92" fill="url(#nlText)" font-size="50" font-weight="700" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="220" y="130" fill="#5E6D86" font-size="17" letter-spacing="4" font-family="Arial, sans-serif">NEURAL LOTUS</text>
+  <text x="220" y="162" fill="#6E665C" font-size="18" font-family="Arial, sans-serif">Bright lotus petals with orbit nodes for a younger spiritual-tech identity.</text>
+</svg>

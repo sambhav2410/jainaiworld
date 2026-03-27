@@ -1,0 +1,38 @@
+﻿<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(700 440) rotate(90) scale(540 860)">
+      <stop stop-color="#241811"/>
+      <stop offset="1" stop-color="#0B0910"/>
+    </radialGradient>
+    <linearGradient id="riseGold" x1="530" y1="120" x2="760" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4BE"/>
+      <stop offset="0.48" stop-color="#FFD35D"/>
+      <stop offset="1" stop-color="#C56F16"/>
+    </linearGradient>
+    <linearGradient id="riseText" x1="230" y1="620" x2="1180" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE8A2"/>
+      <stop offset="0.55" stop-color="#ECAE3F"/>
+      <stop offset="1" stop-color="#B86A14"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1400" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.96 0 1 0 0 0.66 0 0 1 0 0.14 0 0 0 1 0" result="warmGlow"/>
+      <feBlend in="SourceGraphic" in2="warmGlow" mode="screen"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" rx="40" fill="url(#bg)"/>
+  <g filter="url(#glow)">
+    <circle cx="700" cy="176" r="14" fill="#FFF4C2"/>
+    <path d="M700 176C658 210 628 254 614 306C598 368 554 420 480 448" stroke="#C97D18" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+    <path d="M700 176C738 222 764 286 776 340C790 404 840 448 908 472" stroke="#C97D18" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+    <path d="M702 176C676 270 668 368 654 454C642 530 602 592 538 604C494 612 452 594 438 552C426 516 444 480 482 468C512 458 546 462 572 476" stroke="url(#riseGold)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M700 176C724 252 734 334 744 428C756 538 802 590 870 592C926 594 968 560 964 512C960 472 928 448 890 448C866 448 846 454 824 468" stroke="url(#riseGold)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M700 176L700 424" stroke="#FFF0BA" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
+    <path d="M548 646C610 612 792 612 854 646" stroke="#D48824" stroke-width="10" stroke-linecap="round" opacity="0.6"/>
+    <circle cx="530" cy="610" r="10" fill="#FFD86D"/>
+    <circle cx="700" cy="646" r="12" fill="#FFE8A4"/>
+    <circle cx="872" cy="610" r="10" fill="#FFD86D"/>
+  </g>
+  <text x="700" y="785" text-anchor="middle" fill="url(#riseText)" font-size="116" font-style="italic" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="700" y="838" fill="#C6892C" font-size="28" letter-spacing="10" text-anchor="middle" font-family="Arial, sans-serif">ASCEND LIGHT</text>
+</svg>

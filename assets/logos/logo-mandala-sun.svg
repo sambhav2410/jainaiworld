@@ -1,0 +1,32 @@
+﻿<svg width="720" height="220" viewBox="0 0 720 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mandalaGold" x1="35" y1="20" x2="180" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8D36A"/>
+      <stop offset="1" stop-color="#D98324"/>
+    </linearGradient>
+    <linearGradient id="mandalaText" x1="225" y1="70" x2="540" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0AA2A"/>
+      <stop offset="1" stop-color="#9E3A12"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="220" rx="34" fill="#F8F1E8"/>
+  <g transform="translate(28 28)">
+    <circle cx="82" cy="82" r="64" fill="#FFF6E8" stroke="url(#mandalaGold)" stroke-width="5"/>
+    <circle cx="82" cy="82" r="42" fill="#FFF1D0" stroke="url(#mandalaGold)" stroke-width="3"/>
+    <circle cx="82" cy="82" r="16" fill="url(#mandalaGold)"/>
+    <g fill="url(#mandalaGold)">
+      <path d="M82 0L92 24L82 38L72 24L82 0Z"/>
+      <path d="M82 164L92 140L82 126L72 140L82 164Z"/>
+      <path d="M0 82L24 72L38 82L24 92L0 82Z"/>
+      <path d="M164 82L140 72L126 82L140 92L164 82Z"/>
+      <path d="M24 24L46 30L56 46L40 56L24 24Z"/>
+      <path d="M140 24L118 30L108 46L124 56L140 24Z"/>
+      <path d="M24 140L46 134L56 118L40 108L24 140Z"/>
+      <path d="M140 140L118 134L108 118L124 108L140 140Z"/>
+    </g>
+    <circle cx="82" cy="82" r="6" fill="#FFF9F0"/>
+  </g>
+  <text x="220" y="95" fill="url(#mandalaText)" font-size="50" font-weight="700" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="220" y="132" fill="#7D5A42" font-size="17" letter-spacing="4" font-family="Arial, sans-serif">MANDALA SUN MARK</text>
+  <text x="220" y="162" fill="#8E6A50" font-size="18" font-family="Arial, sans-serif">Sacred geometry with a warm spiritual sunrise feel.</text>
+</svg>

@@ -1,0 +1,45 @@
+﻿<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(700 420) rotate(90) scale(520 860)">
+      <stop stop-color="#21150F"/>
+      <stop offset="1" stop-color="#0B0910"/>
+    </radialGradient>
+    <linearGradient id="halo" x1="760" y1="120" x2="760" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2BB"/>
+      <stop offset="0.45" stop-color="#FFD96D"/>
+      <stop offset="1" stop-color="#B86B14"/>
+    </linearGradient>
+    <linearGradient id="body" x1="640" y1="230" x2="830" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF5D3"/>
+      <stop offset="1" stop-color="#F5C55B"/>
+    </linearGradient>
+    <linearGradient id="textGold" x1="340" y1="620" x2="1220" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0B2"/>
+      <stop offset="0.55" stop-color="#EFB644"/>
+      <stop offset="1" stop-color="#B96E14"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1400" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.94 0 1 0 0 0.66 0 0 1 0 0.16 0 0 0 1 0" result="warmGlow"/>
+      <feBlend in="SourceGraphic" in2="warmGlow" mode="screen"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" rx="40" fill="url(#bg)"/>
+  <g filter="url(#glow)">
+    <circle cx="760" cy="270" r="96" stroke="url(#halo)" stroke-width="18"/>
+    <circle cx="760" cy="270" r="128" stroke="#F2B93E" stroke-width="4" stroke-dasharray="2 18" opacity="0.7"/>
+    <circle cx="760" cy="270" r="140" stroke="#F5C65C" stroke-width="2" opacity="0.18"/>
+    <circle cx="760" cy="226" r="42" fill="url(#body)"/>
+    <path d="M724 284C724 252 742 242 760 242C778 242 796 252 796 284V340C796 370 780 388 760 388C740 388 724 370 724 340V284Z" fill="url(#body)"/>
+    <path d="M706 314C688 344 692 372 710 388C728 404 748 398 760 382" stroke="#F7D784" stroke-width="18" stroke-linecap="round"/>
+    <path d="M814 314C832 344 828 372 810 388C792 404 772 398 760 382" stroke="#F7D784" stroke-width="18" stroke-linecap="round"/>
+    <path d="M726 426C740 458 748 476 760 476C772 476 780 458 794 426" stroke="#F4CC67" stroke-width="18" stroke-linecap="round"/>
+    <path d="M688 422C724 458 792 458 832 422" stroke="#F0B13A" stroke-width="16" stroke-linecap="round"/>
+    <path d="M670 458C716 494 806 494 850 458" stroke="#D88A25" stroke-width="12" stroke-linecap="round" opacity="0.95"/>
+    <circle cx="640" cy="594" r="8" fill="#FFD86D"/>
+    <circle cx="760" cy="586" r="12" fill="#FFE9A3"/>
+    <circle cx="886" cy="592" r="8" fill="#FFD86D"/>
+  </g>
+  <text x="480" y="785" fill="url(#textGold)" font-size="116" font-style="italic" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" transform="translate(280 0)">JainAIWorld</text>
+  <text x="760" y="838" fill="#C78D32" font-size="28" letter-spacing="10" text-anchor="middle" font-family="Arial, sans-serif">HALO CHILD</text>
+</svg>

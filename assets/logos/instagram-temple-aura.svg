@@ -1,0 +1,31 @@
+﻿<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(540 280) rotate(90) scale(760)">
+      <stop stop-color="#FFF2D5"/>
+      <stop offset="1" stop-color="#F1B648"/>
+    </radialGradient>
+    <linearGradient id="glow" x1="310" y1="220" x2="700" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD46C"/>
+      <stop offset="1" stop-color="#D05D17"/>
+    </linearGradient>
+    <linearGradient id="text" x1="250" y1="760" x2="850" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A84612"/>
+      <stop offset="1" stop-color="#6F2909"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" rx="140" fill="url(#bg)"/>
+  <circle cx="540" cy="520" r="330" fill="#FFF5E2" stroke="#F1D39A" stroke-width="10"/>
+  <circle cx="540" cy="520" r="274" stroke="url(#glow)" stroke-width="12" stroke-dasharray="4 20"/>
+  <circle cx="540" cy="520" r="16" fill="#E78F1F"/>
+  <circle cx="350" cy="400" r="14" fill="#F2B53F"/>
+  <circle cx="730" cy="400" r="14" fill="#F2B53F"/>
+  <circle cx="420" cy="690" r="14" fill="#F2B53F"/>
+  <circle cx="660" cy="690" r="14" fill="#F2B53F"/>
+  <path d="M360 650H720" stroke="#7C3814" stroke-width="26" stroke-linecap="round"/>
+  <path d="M430 650V470M540 650V390M650 650V470" stroke="#7C3814" stroke-width="24" stroke-linecap="round"/>
+  <path d="M400 470H680L540 300L400 470Z" fill="url(#glow)"/>
+  <path d="M512 298H568L540 226L512 298Z" fill="#7C3814"/>
+  <path d="M392 696H688" stroke="#D78927" stroke-width="16" stroke-linecap="round"/>
+  <text x="540" y="830" text-anchor="middle" fill="url(#text)" font-size="118" font-weight="700" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="540" y="902" text-anchor="middle" fill="#8D4F1A" font-size="38" letter-spacing="7" font-family="Arial, sans-serif">TEMPLE AURA</text>
+</svg>

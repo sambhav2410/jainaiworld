@@ -1,0 +1,33 @@
+﻿<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(540 300) rotate(90) scale(760)">
+      <stop stop-color="#FFF4D7"/>
+      <stop offset="1" stop-color="#F3C15D"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="260" y1="170" x2="700" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE28A"/>
+      <stop offset="1" stop-color="#D67219"/>
+    </linearGradient>
+    <linearGradient id="text" x1="220" y1="760" x2="860" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A54510"/>
+      <stop offset="1" stop-color="#6D2507"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" rx="140" fill="url(#bg)"/>
+  <circle cx="540" cy="540" r="318" fill="#FFF8EA" stroke="url(#gold)" stroke-width="16"/>
+  <circle cx="540" cy="540" r="214" fill="#FFF0C9" stroke="url(#gold)" stroke-width="10"/>
+  <circle cx="540" cy="540" r="74" fill="url(#gold)"/>
+  <g fill="url(#gold)">
+    <path d="M540 160L590 278L540 346L490 278L540 160Z"/>
+    <path d="M540 920L590 802L540 734L490 802L540 920Z"/>
+    <path d="M160 540L278 490L346 540L278 590L160 540Z"/>
+    <path d="M920 540L802 490L734 540L802 590L920 540Z"/>
+    <path d="M270 270L374 300L424 374L350 424L270 270Z"/>
+    <path d="M810 270L706 300L656 374L730 424L810 270Z"/>
+    <path d="M270 810L374 780L424 706L350 656L270 810Z"/>
+    <path d="M810 810L706 780L656 706L730 656L810 810Z"/>
+  </g>
+  <circle cx="540" cy="540" r="28" fill="#FFFDF6"/>
+  <text x="540" y="820" text-anchor="middle" fill="url(#text)" font-size="118" font-weight="700" font-family="Georgia, 'Times New Roman', serif">JainAIWorld</text>
+  <text x="540" y="892" text-anchor="middle" fill="#8D4F1A" font-size="38" letter-spacing="7" font-family="Arial, sans-serif">MANDALA SUN</text>
+</svg>
