@@ -1731,6 +1731,62 @@ button {
     max-width: none;
   }
 }
+@media (max-width: 760px) {
+  .hero-section {
+    overflow: hidden;
+  }
+
+  .hero-layout {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .hero-copy-col {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-inline: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero-copy-col > * {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-title,
+  .hero-copy,
+  .eyebrow {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: clamp(2.3rem, 12vw, 3.5rem);
+    line-height: 0.98;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    font-size: 0.96rem;
+  }
+
+  .hero-actions {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blessing-strip {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1743,6 +1799,7 @@ button {
     transition: none !important;
   }
 }
+
 
 
 
