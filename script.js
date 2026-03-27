@@ -1,4 +1,4 @@
-const header = document.getElementById("siteHeader");
+﻿const header = document.getElementById("siteHeader");
 const menuToggle = document.getElementById("menuToggle");
 const siteNav = document.getElementById("siteNav");
 const currentYear = document.getElementById("currentYear");
@@ -86,6 +86,9 @@ document.addEventListener("click", (event) => {
   }
 });
 
+const immediateHeroItems = document.querySelectorAll(".hero-section .reveal");
+
+immediateHeroItems.forEach((item) => item.classList.add("is-visible"));
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -381,7 +384,7 @@ repeatButtons.forEach((button) => {
     button.classList.add("is-active");
 
     const currentCycle = Math.min(completedCycles + 1, selectedRepeat);
-    updateAudioStatus(`Repeat mode set to ${selectedRepeat}x${mantraAudio?.paused ? "" : ` � cycle ${currentCycle} of ${selectedRepeat}`}`);
+    updateAudioStatus(`Repeat mode set to ${selectedRepeat}x${mantraAudio?.paused ? "" : ` · cycle ${currentCycle} of ${selectedRepeat}`}`);
   });
 });
 
@@ -542,4 +545,5 @@ updateAudioUI();
 resizeWaveformCanvas();
 ensureWaveformLoop();
 setInterval(updateCountdown, 60000);
+
 
