@@ -290,7 +290,10 @@ button {
 
 .hero-copy-col {
   max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
+
 
 
 .eyebrow {
@@ -315,11 +318,12 @@ button {
 }
 
 .hero-title {
-  max-width: 9ch;
+  max-width: none;
   color: var(--cream);
   font-size: clamp(3.4rem, 8vw, 6.4rem);
   text-shadow: 0 12px 38px hsla(20 20% 12% / 0.3);
 }
+
 
 .gold-text {
   background: linear-gradient(135deg, var(--gold), var(--saffron));
@@ -329,19 +333,22 @@ button {
 }
 
 .hero-copy {
-  max-width: 700px;
-  margin: 1.5rem 0 0;
+  max-width: 760px;
+  margin: 1.5rem auto 0;
   color: var(--gold-light);
   font-size: clamp(1rem, 2vw, 1.18rem);
   line-height: 1.8;
 }
+
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
+  justify-content: center;
 }
+
 
 .button,
 .festival-link {
@@ -391,13 +398,15 @@ button {
 }
 
 .blessing-strip {
-  margin-top: 1.9rem;
+  width: min(100%, 760px);
+  margin: 1.9rem auto 0;
   overflow: hidden;
   border: 1px solid hsla(40 70% 75% / 0.15);
   border-radius: 999px;
   background: hsla(40 33% 97% / 0.08);
   backdrop-filter: blur(10px);
 }
+
 
 .blessing-track {
   display: flex;
@@ -1332,8 +1341,12 @@ button {
 
 @media (max-width: 1200px) {
   .hero-title {
-    font-size: clamp(3.2rem, 7vw, 5.7rem);
-  }
+  max-width: none;
+  color: var(--cream);
+  font-size: clamp(3.4rem, 8vw, 6.4rem);
+  text-shadow: 0 12px 38px hsla(20 20% 12% / 0.3);
+}
+
 
   .shrine-card {
     min-height: 470px;
@@ -1357,7 +1370,10 @@ button {
 
   .hero-copy-col {
   max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
+
 
 
   .hero-visual-col {
@@ -1402,8 +1418,12 @@ button {
   }
 
   .hero-title {
-    max-width: 11ch;
-  }
+  max-width: none;
+  color: var(--cream);
+  font-size: clamp(3.4rem, 8vw, 6.4rem);
+  text-shadow: 0 12px 38px hsla(20 20% 12% / 0.3);
+}
+
 
   .scroll-indicator {
     display: none;
@@ -1549,6 +1569,7 @@ button {
     transition: none !important;
   }
 }
+
 
 
 
